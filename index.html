@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Circular Ruins</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .grid-container {
+        font-size: 20px;
+        color: #fff;
+        display: grid;
+        grid-template-areas:
+          "header header header header header header"
+          "left left middle middle right right"
+          "footer footer footer footer footer footer";
+        /* grid-column-gap: 10px; - if you want gap between the columns */
+      }
+
+      .left,
+      .middle,
+      .right {
+        padding: 10px;
+      }
+
+      .left {
+        grid-area: left;
+      }
+
+      .middle {
+        grid-area: middle;
+        text-align: center;
+      }
+
+      .right {
+        grid-area: right;
+        text-align: right;
+      }
+
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        z-index: 100;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        background-color: #000;
+      }
+
+      .text {
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: ;
+        font-size: 12px;
+        fill: #fff;
+      }
+
+      .main {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      }
+    </style>
+    <!--
+          #rotatingText {
+        animation-name: rotate-circle;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes rotate-circle {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+    -->
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="left">The</div>
+      <div class="middle">Circular</div>
+      <div class="right">Ruins</div>
+    </div>
+    
+    <div class="center">
+      <a href="categories.html">enter</a>
+    </div>
+
+    <div class="main">
+      <svg id="rotatingText" viewbox="0 0 200 200" width="600" height="600">
+        <defs>
+          <path
+            id="circle"
+            d="M 100, 100
+                m -75, 0
+                a 75, 75 0 1, 0 150, 0
+                a 75, 75 0 1, 0 -150, 0
+                "
+          ></path>
+        </defs>
+        <text width="200">
+          <textpath alignment-baseline="top" xlink:href="#circle" class="text">
+            He dreamt the rest with meticulous love. He dreamt the rest with
+            meticulous love.
+          </textpath>
+        </text>
+      </svg>
+    </div>
+    
+    <div class="grid-container">
+      <div class="left"></div>
+      <div class="middle"></div>
+      <div class="right">Jorge Luis Borges</div>
+    </div>
+  </body>
+</html>
