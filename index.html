@@ -1,136 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Circular Ruins</title>
+<html lang="en" class="no-js">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Circular Text Effect | Demo 1 | Codrops</title>
+	<meta name="author" content="Codrops">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/kxo3pgz.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>document.documentElement.className = "js";
 
-    <style>
-      .grid-container {
-        font-size: 20px;
-        color: #fff;
-        display: grid;
-        grid-template-areas:
-          "header header header header header header"
-          "left left middle middle right right"
-          "footer footer footer footer footer footer";
-        /* grid-column-gap: 10px; - if you want gap between the columns */
-      }
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
 
-      .left,
-      .middle,
-      .right {
-        padding: 10px;
-      }
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
 
-      .left {
-        grid-area: left;
-      }
+<body class="demo-1 loading">
+	<main>
+		<svg class="circles" width="100%" height="100%" viewBox="0 0 1400 1400">
+			<def>
+				<path id="circle-1" d="M250,700.5A450.5,450.5 0 1 11151,700.5A450.5,450.5 0 1 1250,700.5"></path>
+				<path id="circle-2" d="M382,700.5A318.5,318.5 0 1 11019,700.5A318.5,318.5 0 1 1382,700.5"></path>
+				<path id="circle-3" d="M487,700.5A213.5,213.5 0 1 1914,700.5A213.5,213.5 0 1 1487,700.5"></path>
+				<path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5"></path>
+			</def>
+			<text class="circles__text circles__text--1">
+				<textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2800">Enter The Circular Ruins</textPath>
+			</text>
+			<text class="circles__text circles__text--2">
+				<textPath class="circles__text-path" xlink:href="#circle-2" aria-label="" textLength="1950">Enter The Circular Ruins</textPath>
+			</text>
+			<text class="circles__text circles__text--3">
+				<textPath class="circles__text-path" xlink:href="#circle-3" aria-label="" textLength="1330">Enter The Circular Ruins</textPath>
+			</text>
+			<text class="circles__text circles__text--4">
+				<textPath class="circles__text-path" xlink:href="#circle-4" aria-label="" textLength="830">Enter The Circular Ruins</textPath>
+			</text>
+		</svg>
+		<div class="frame">
+			<h1 class="frame__title">THE CIRCULAR RUINS</h1>
+			<nav class="frame__author">
+				<div>JORGE LUIS BORGES</div>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="vertical-menu">
+				<a href="1-arrival.html"><span style="font-size: 1.8vw;">0?</span>ARRIVAL<hr></a>
+				<a href="2-purpose.html"><span style="font-size: 1.8vw;">0?</span>PURPOSE<hr></a>
+				<a href="3-discovery.html"><span style="font-size: 1.8vw;">0?</span>DISCOVERY<hr></a>
+				<a href="4-insomnia.html"><span style="font-size: 1.8vw;">0?</span>INSOMNIA<hr></a>
+				<a href="5-anotherdream.html" style="font-size: 10vw;"><span style="font-size: 1.8vw;">0?</span>ANOTHER DREAM<hr></a>
+				<a href="6-acceptance.html"><span style="font-size: 1.8vw;">0?</span>ACCEPTANCE<hr></a>
+			  </div>  
+		</div>
+		
+		<button class="enter">
+			<div class="enter__bg"></div>
+			<span class="enter__text">Enter</span>
+		</button>
+	</main>
+	<script src="index.js"></script>
+</body>
 
-      .middle {
-        grid-area: middle;
-        text-align: center;
-      }
-
-      .right {
-        grid-area: right;
-        text-align: right;
-      }
-
-      .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-        z-index: 100;
-      }
-
-      body {
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        background-color: #000;
-      }
-
-      .text {
-        font-weight: 600;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-family: ;
-        font-size: 12px;
-        fill: #fff;
-      }
-
-      .main {
-        display: grid;
-        align-items: center;
-        justify-items: center;
-      }
-    </style>
-    <!--
-          #rotatingText {
-        animation-name: rotate-circle;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes rotate-circle {
-        to {
-          transform: rotate(1turn);
-        }
-      }
-    -->
-  </head>
-
-  <body>
-    <div class="grid-container">
-      <div class="left">The</div>
-      <div class="middle">Circular</div>
-      <div class="right">Ruins</div>
-    </div>
-    
-    <div class="center">
-      <a href="categories.html">enter</a>
-    </div>
-
-    <div class="main">
-      <svg id="rotatingText" viewbox="0 0 200 200" width="600" height="600">
-        <defs>
-          <path
-            id="circle"
-            d="M 100, 100
-                m -75, 0
-                a 75, 75 0 1, 0 150, 0
-                a 75, 75 0 1, 0 -150, 0
-                "
-          ></path>
-        </defs>
-        <text width="200">
-          <textpath alignment-baseline="top" xlink:href="#circle" class="text">
-            He dreamt the rest with meticulous love. He dreamt the rest with
-            meticulous love.
-          </textpath>
-        </text>
-      </svg>
-    </div>
-    
-    <div class="grid-container">
-      <div class="left"></div>
-      <div class="middle"></div>
-      <div class="right">Jorge Luis Borges</div>
-    </div>
-  </body>
 </html>

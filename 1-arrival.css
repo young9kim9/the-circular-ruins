@@ -1,0 +1,139 @@
+body {
+    width: 100%;
+    background-color: black;
+}
+
+.light-mode {
+  background-color: #fff;
+}
+  
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+p {
+    margin: 0;
+    font-size: 260px;
+    font-family: 'Alata';
+    color: #F66A37;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+.third {
+    text-align: left;
+    margin-top: -80px;
+  }
+
+.first {
+    margin-top: 0;
+}
+  
+.fifth {
+    text-align: right;
+    margin-top: -80px;
+  }
+  
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "left left middle middle right right";
+      }
+
+    .grid-container .left {
+        grid-area: left;
+        font-family: 'Outfit';
+        font-size: 16px;
+        line-height: 26px;
+        color: #C30B48;
+        margin-left: 40px;
+      }
+
+    .grid-container .middle {
+        grid-area: middle;
+        text-align: center;
+        margin-top: -80px;
+        font-size: 260px;
+        font-family: 'Alata';
+        color: #F66A37;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+    .grid-container .right {
+        grid-area: right;
+        text-align: right;
+        font-family: 'Outfit';
+        font-size: 16px;
+        line-height: 26px;
+        color: #C30B48;
+        margin-right: 40px;
+      }
+
+.grid-container-2 {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "left left right right";
+      }
+    .grid-container-2 .left {
+        grid-area: left;
+        margin-top: -80px;
+      }
+    .grid-container-2 .right {
+      grid-area: right;
+      text-align: right;
+      font-family: 'Outfit';
+      font-size: 16px;
+      line-height: 26px;
+      color: #C30B48;
+      margin-right: 40px;
+      }
+
+    .grid-container-2 .right a {
+      text-decoration: underline;
+    }
+
+    .grid-container-2 .right a:hover {
+      cursor: pointer;
+    }
+
+.grid-container-3 {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "left left right right";
+      }
+    .grid-container-3 .right {
+        grid-area: right;
+        text-align: right;
+        margin-top: -80px;
+      }
+    .grid-container-3 .left {
+      grid-area: left;
+      text-align: left;
+      font-family: 'Outfit';
+      font-size: 16px;
+      line-height: 26px;
+      color: #C30B48;
+      margin-left: 40px;
+      }
+
+    .grid-container-3 .left a {
+      text-decoration: underline;
+    }
+
+    .grid-container-3 .left a:hover {
+      cursor: pointer;
+    }
+
+span {
+  color: transparent;
+  -webkit-text-stroke: 1px #F66A37;
+}

@@ -3,93 +3,57 @@
   
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  * {
-    background-color: black;
-    color: white;
-  }
-  
-  .center {
-    top: 50%;
-    left: 50%;
-    }
-  
-  p {
-    margin: 0;
-    font-size: 260px;
-  }
-  
-  .first, .third, .fourth {
-    text-align: left;
-  }
-  
-  .middle {
-    text-align: center;
-    margin: 0;
-  }
-  
-  .fifth, .sixth {
-    text-align: right;
-  }
-  
-  .grid-container {
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-    "left left middle middle right right";
-      }
-  
-        .left,
-      .middle,
-      .right {
-        padding: 10px;
-      }
-
-      .left {
-        grid-area: left;
-      }
-
-      .middle {
-        grid-area: middle;
-        text-align: center;
-      }
-
-      .right {
-        grid-area: right;
-        text-align: right;
-      }
-</style>
+<link rel="stylesheet" href="1-arrival.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Outfit&display=swap" rel="stylesheet">
 </head>
   
 <body>
-  <div class="center">
-    <a href="categories.html">menu</a>
-  </div>
+
   <p class="first">
-    NO ONE SAW
+    <span>NO ONE</span> SAW
   </p>
+
   <div class="grid-container">
     <div class="left">
       No one saw him disembark in the unanimous night, no one saw the bamboo canoe sink into the sacred mud, but in a few days there was no one who did not know that the taciturn man came from the South and that his home had been one of those numberless villages upstream in the deeply cleft side of the mountain, where the end language has not been contaminated by Greek and where leprosy is infrequent. 
     </div>
-    <p class="middle">
+    <div class="middle">
       HIM
-    </p>
+    </div>
     <div class="right">
       What is certain is that the grey man kissed the mud, climbed up the bank with pushing aside (probably, without feeling) the blades which were lacerating his flesh, and crawled, nauseated and bloodstained, up to the circular enclosure crowned with a stone tiger or horse, which sometimes was the color of flame and now was that of ashes. This circle was a temple which had been devoured by ancient fires, profaned by the miasmal jungle, and whose god no longer received the homage of men.
     </div>
   </div>
+
   <p class="third">
-    DISEMBARK
+    <span>DISEMBARK</span>
   </p>
-  <p class="fourth">
-    IN THE
-  </p>
+
+  <div class="grid-container-2">
+    <p class="left">
+      IN THE
+    </p>
+    <div class="right">
+      The stranger stretched himself out beneath the pedestal. He was <a onclick="myFunction()">awakened</a> by the sun high overhead. He was not astonished to find that his wounds had healed; he closed his pallid eyes and slept, not through weakness of flesh but through determination of will. He knew that this temple was the place required for his invincible intent; he knew that the incessant trees had not succeeded in strangling the ruins of another propitious temple downstream which had once belonged to gods now burned and dead; 
+      <a href="2-purpose.html"> he knew that his immediate obligation was to dream. </a>
+    </div>
+  </div>
+
   <p class="fifth">
     UNANIMOUS
   </p>
-  <p class="sixth">
-    NIGHT,
-  </p>
+
+  <div class="grid-container-3">
+    <div class="left">
+      Toward midnight he was awakened by the inconsolable shriek of a bird. Tracks of bare feet, some figs and a jug warned him that the men of the region had been spying respectfully on his sleep, soliciting his protection or afraid of his magic. He felt a chill of fear, and sought out a sepulchral niche in the dilapidated wall where he concealed himself among unfamiliar leaves.
+    </div>
+    <p class="right">
+      NIGHT
+    </p>
+  </div>
+
+<script src="1-arrival.js"></script>
 </body>
 </html>

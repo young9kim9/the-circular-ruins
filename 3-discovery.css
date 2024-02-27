@@ -1,0 +1,267 @@
+body {
+    width: 100%;
+    background-color: black;
+}
+  
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+p {
+    margin: 0;
+    font-size: 260px;
+    font-family: 'Alata';
+    color: #F66A37;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+.first {
+    text-align: left;
+  }
+  
+.second {
+    text-align: right;
+    margin-top: -80px;
+  }
+  
+.third {
+    text-align: center;
+    margin-top: -80px;
+  }
+
+#theText {
+  display:inline-flex;
+    position: absolute;
+    left: 100px; 
+    top: 100px;
+    color: #F66A37;
+    opacity: 70%;
+  }
+
+  #txt1 {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    outline: inherit;
+    font: 220px 'Chango';
+    cursor: pointer;
+    animation: 5s infinite;
+    animation-name: txt1;
+  }
+
+  #txt1::before {
+    animation: 5s infinite;
+    animation-name: txt1;
+  }
+
+  #txt1::after {
+    transform: translateY(100px);
+    transition:  0s;
+    animation: none;
+  }
+
+  #txt2 {
+    font: 220px 'Ballet';
+    animation: 5s infinite;
+    animation-name: txt2;
+  }
+
+  #txt3 {
+    font: 220px 'Alfa Slab One';
+    animation: 5s infinite;
+    animation-name: txt3;
+  }
+
+  #txt4 {
+    font: 220px 'Vast Shadow';
+    animation: 5s infinite;
+    animation-name: txt4;
+  }
+
+  #txt5 {
+    font: 220px 'Comforter Brush';
+    animation: 5s infinite;
+    animation-name: txt5;
+  }
+
+  #txt6 {
+    font: 220px 'Bokor';
+    animation: 5s infinite;
+    animation-name: txt6;
+  }
+
+  #txt7 {
+    font: 220px 'VT323';
+    animation: 5s infinite;
+    animation-name: txt7;
+  }
+
+@keyframes txt1  {
+    0% {
+      margin-left: 0%;
+      margin-top: 500px;
+    }
+  
+    50% {
+      margin-left: 90px;
+      width: 10%;
+      margin-top:0px; /* You can push the element up/down with this. */
+    }
+    
+    100% {
+      margin-left: 0%;
+      margin-top: 500px;
+    }  
+  }
+
+@keyframes txt2  {
+    0% {
+      margin-left: 0%;
+      margin-top: 10px;
+    }
+  
+    50% {
+      margin-left: 50px;
+      width: 10%;
+      margin-top: 200px; /* You can push the element up/down with this. */
+    }
+    
+    100% {
+      margin-left: 0%;
+      margin-top: 10px;
+    }  
+  }
+
+@keyframes txt3  {
+    0% {
+      margin-left: 20%;
+      margin-top: 300px;
+    }
+  
+    50% {
+      margin-left: 0%;
+      margin-top: 20px;
+    }
+    
+    100% {
+      margin-left: 20%;
+      margin-top: 300px;
+    }  
+  }
+
+@keyframes txt4  {
+    0% {
+      margin-left: 40%;
+      margin-top: 700px;
+    }
+  
+    50% {
+      margin-left: 0%;
+      margin-top: 60px;
+    }
+    
+    100% {
+      margin-left: 40%;
+      margin-top: 700px;
+    }  
+  }
+  
+@keyframes txt5  {
+    0% {
+      margin-left: ;
+      margin-top: 0px;
+    }
+  
+    50% {
+      margin-left: 0%;
+      margin-top: 60px;
+    }
+    
+    100% {
+      margin-left: ;
+      margin-top: 0px;
+    }  
+  }
+
+@keyframes txt6  {
+    0% {
+      margin-left: ;
+      margin-top: 0px;
+    }
+  
+    50% {
+      margin-left: 0%;
+      margin-top: 400px;
+    }
+    
+    100% {
+      margin-left: ;
+      margin-top: 0px;
+    }  
+  }
+
+@keyframes txt7  {
+    0% {
+      margin-left: ;
+      margin-top: 0px;
+    }
+  
+    50% {
+      margin-left: -60px;
+      margin-top: 600px;
+    }
+    
+    100% {
+      margin-left: ;
+      margin-top: 0px;
+    }  
+  }
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    font-size: 26px;
+    line-height: 36px;
+    font-family: 'Outfit';
+    color: #C30B48;
+    }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 750px) {
+  .column {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  opacity: 25%;
+}
+
+a:visited {
+  color: #C30B48;
+  opacity: 100;
+}
+
+a:hover {
+  color: #C30B48;
+  opacity: 100;
+}
